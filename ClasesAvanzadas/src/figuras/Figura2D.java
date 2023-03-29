@@ -2,24 +2,22 @@ package figuras;
 
 import java.util.ArrayList;
 
-public abstract class Figura2D {
-    public final int DIMENSIONES = 2; // es una constante
+abstract class Figura2D {
+    //ATRIBUTOS
     int lados;
+
+    //CONSTRUCTOR
 
     public Figura2D(int lados) {
         this.lados = lados;
     }
 
-    public String nombreFigura() {
-        return null;
-    }
+    //FUNCIONES
+    public abstract String nombreFigura();
 
-    protected abstract ArrayList<Linea> crearLíneas();
+    protected abstract ArrayList<Linea> crearLineas();
 
-    protected abstract double calcularPerímetro();
+    protected abstract double calcularPerimetro();
 
-    protected abstract double calcularÁrea();
-
-    // este no está en el diagrama, pero why not
-    protected abstract void dibujarFigura();
+    protected abstract double calcularArea();
 }
