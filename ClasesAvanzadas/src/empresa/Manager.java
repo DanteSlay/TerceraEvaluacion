@@ -20,16 +20,12 @@ public class Manager extends Empleado{
 
     @Override
     public String toString() {
-        String cadena = "Datos del empleado\n" + "* nombre: " + getNombre()
-                + "\n* dirección: " + getDirección() + "\n* año de nacimiento: " + getAñoNacimiento()
-                + "\n* fecha de inicio: " + getFechaInicio() + "\n* salario: " + getSalario() + " €";
-
+        String cadena = getNombre() + getDirección();
         if (sonrisa) {
-            cadena = cadena + ":)";
+            cadena = cadena + " :)";
         } else {
             cadena = cadena + ":(";
         }
-
         return cadena;
     }
 }

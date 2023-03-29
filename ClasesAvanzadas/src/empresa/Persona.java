@@ -63,4 +63,13 @@ public class Persona {
         }
         return iguales;
     }
+
+    @Override
+    public String toString() {
+        return "Persona{" +
+                "añoNacimiento=" + añoNacimiento +
+                ", dirección='" + dirección + '\'' +
+                ", nombre='" + nombre + '\'' +
+                '}';
+    }
 }
